@@ -1,0 +1,5 @@
+what is main function?
+The main Function
+is a part of every C program. The parentheses after main indicate that main is a program
+building block called a function. C programs contain one or more functions, one of which
+must be main . Every program in C begins executing at the function main .
