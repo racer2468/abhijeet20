@@ -8,3 +8,4 @@ cessor before compilation. Line 3 tells the preprocessor to include the contents
 dard input/output header ( <stdio.h> ) in the program. This header contains information
 used by the compiler when compiling calls to standard input/output library functions such
 as printf
+so #include is a basic keyword which heads the programme to be compiled.
