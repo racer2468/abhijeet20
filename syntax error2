@@ -1,0 +1,12 @@
+a1.c:6:13: warning: format ‘%d’ expects argument of type ‘int *’, but argument 2 has type ‘int’ [-Wformat=]
+     scanf("%d",a);
+            ~^
+a1.c:7:12: error: expected expression before ‘int’
+     return int a;
+            ^~~
+puts( "Enter seven integers: " );
+scanf( "%d%i%i%i%o%u%x", &a, &b, &c, &d, &e, &f, &g );
+The % in this context is treated by scanf
+(and printf as we’ll see) as a special character that begins a conversion specifier. The second
+argument of scanf begins with an ampersand ( & )—called the address operator
+& is address operator which is used for special characters such as %
