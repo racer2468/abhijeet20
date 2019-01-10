@@ -23,3 +23,8 @@ int main()
      z=add(x,y);
      output(x,y,z);
 }
+error-1
+p1.c: In function ‘input’:
+p1.c:5:11: warning: missing terminating " character
+     scanf("%d,a) 
+" is not closed 
