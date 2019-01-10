@@ -21,3 +21,12 @@ int main(void)
     int b=compute(a);
     output(a,b);
 }
+what is #include
+Preprocessor Directive
+#include <stdio.h>
+is a directive to the C preprocessor. Lines beginning with # are processed by the prepro-
+cessor before compilation. Line 3 tells the preprocessor to include the contents of the stan-
+dard input/output header ( <stdio.h> ) in the program. This header contains information
+used by the compiler when compiling calls to standard input/output library functions such
+as printf
+so #include is a basic keyword which heads the programme to be compiled.
