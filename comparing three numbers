@@ -24,7 +24,7 @@ int compare(int a,int b,int c)
 }
      void output(int a,int b,int c,int d)
 {
-     printf("%d,%d,%d is %d",a,b,c,d);
+     printf("%d is lesser among %d,%d,%d",a,b,c,d);
 }
 int main()
 {
