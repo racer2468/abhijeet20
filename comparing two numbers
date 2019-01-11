@@ -1,0 +1,35 @@
+#include <stdio.h>
+void input(int*a,int*b)
+{
+     printf("enter a");
+     scanf("%d",a);
+     printf("enter b");
+     scanf("%d",b);
+}
+int compare(int a,int b)
+{
+     int c;
+     if(a<b){
+       c=a;
+     }
+     else{
+     c=b;
+     }
+     return c;
+}
+void output(int a,int b,int c)
+{
+     printf("%d<%d is %d",a,b,c);
+}
+int main()
+{
+     int x,y,z;
+     input(&x,&y);
+     z=compare(x,y);
+     output (x,y,z);
+}
+when if & else are used?
+The if selection statement performs an indicated action only when the condition is true;
+otherwise the action is skipped. The if ... else selection statement allows you to specify
+that different actions are to be performed when the condition is true and when it’s false.
+For example, the pseudocode statement
