@@ -3,7 +3,7 @@ you can create an array for it.int data[100];
 The size and type of arrays cannot be changed after its declaration.
 Arrays are of two types:
 -One dimensional arrays
--Multidimensional arrays (will be discussed in next chapter)
+-Multidimensional arrays.
 How to declare arrays?
 data_type array_name[array_size];float mark[5];
 Here, we declared an array, mark, of floating-point type and size 5. Meaning, it can hold 5 floating-point values.
