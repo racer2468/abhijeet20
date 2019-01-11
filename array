@@ -1,0 +1,12 @@
+An array is a collection of fixed number of values of a single type. For example: if you want to store 100 integers in sequence,
+you can create an array for it.int data[100];
+The size and type of arrays cannot be changed after its declaration.
+Arrays are of two types:
+-One dimensional arrays
+-Multidimensional arrays (will be discussed in next chapter)
+How to declare arrays?
+data_type array_name[array_size];float mark[5];
+Here, we declared an array, mark, of floating-point type and size 5. Meaning, it can hold 5 floating-point values.
+How to initialize an array?
+It's possible to initialize an array during declaration. 
+For example,int mark[5] = {19, 10, 8, 17, 9};
