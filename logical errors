@@ -1,0 +1,6 @@
+how to debug a logical error?
+1.compare with a existing programme.
+2.mental tracing(understanding set of concept)
+3.putting printf whereever possible(we can find the control flow)
+4.print the values of variable
+5.logging(while compiling large programmes).
