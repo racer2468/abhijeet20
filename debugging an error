@@ -1,0 +1,42 @@
+how to debug an error?
+Programs produced with structured techniques were clearer, easier to debug
+and modify and more likely to be bug free in the first place
+Read the problem statement.
+2. Formulate the algorithm using pseudocode and top-down, stepwise refinement.
+3. Write a C program.
+4. Test, debug and execute the C program.
+When de-bugging a program, this repeatability is essential for proving that corrections to a program
+work properly.
+Function rand actually generates pseudorandom numbers. Calling rand repeatedly
+produces a sequence of numbers that appears to be random. However, the sequence repeats
+itself each time the program is executed. Once a program has been thoroughly debugged,
+it can be conditioned to produce a different sequence of random numbers for each execu-
+tion. This is called randomizing and is accomplished with the standard library function
+srand . Function srand takes an unsigned integer argument and seeds function rand to
+produce a different sequence of random numbers for each execution of the program.
+We demonstrate function srand in Fig. 5.13. Function srand takes an unsigned int
+value as an argument. The conversion specifier %u is used to read an unsigned int value
+with scanf . The function prototype for srand is found in <stdlib.h> .
+Let’s run the program several times and observe the results. Notice that a different
+sequence of random numbers is obtained each time the program is run, provided that a
+different seed is supplied.
+To randomize without entering a seed each time, use a statement like
+The srand function call is ordinarily inserted in a program only after it has been thoroughly de-
+bugged. While debugging, it’s better to omit srand . This ensures repeatability, which is essential
+to proving that corrections to a random number generation program work properly.
+Use conditional compilationto specify portions of aprogram that should notalways be compiled (such ascode that assists you indebugging)
+
+Conditional compilation is commonly used as a debugging aid. Many C implementa-
+tions include debuggers, which provide much more powerful features than conditional
+compilation. If a debugger is not available, printf statements are often used to print vari-
+able values and to confirm the flow of control. These printf statements can be enclosed
+in conditional preprocessor directives so the statements are compiled only while the
+debugging process is not completed. For example,
+#ifdef DEBUG
+causes a printf statement to be compiled in the program if the symbolic constant DEBUG
+has been defined ( #define DEBUG ) before directive #ifdef DEBUG . When debugging is
+completed, the #define directive is removed from the source file (or commented out) and
+the printf statements inserted for debugging purposes are ignored during compilation. In
+larger programs, it may be desirable to define several different symbolic constants that con-
+trol the conditional compilation in separate sections of the source file. Many compilers al-
+low you to define and undefine symbolic constants with a compiler flag so that you do notneed to change the code.
