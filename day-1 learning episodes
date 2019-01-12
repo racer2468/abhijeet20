@@ -1,0 +1,126 @@
+(1)
+
+what is #include
+Preprocessor Directive
+#include <stdio.h>
+is a directive to the C preprocessor. Lines beginning with # are processed by the prepro-
+cessor before compilation. Line 3 tells the preprocessor to include the contents of the stan-
+dard input/output header ( <stdio.h> ) in the program. This header contains information
+used by the compiler when compiling calls to standard input/output library functions such
+as printf
+so #include is a basic keyword which heads the programme to be compiled.
+
+
+
+(2)
+
+p1.c: In function ‘input’:
+p1.c:5:11: warning: missing terminating " character
+     scanf("%d,a) 
+" is not closed 
+
+
+
+(3)
+
+a1.c:6:13: warning: format ‘%d’ expects argument of type ‘int *’, but argument 2 has type ‘int’ [-Wformat=]
+     scanf("%d",a);
+            ~^
+a1.c:7:12: error: expected expression before ‘int’
+     return int a;
+            ^~~
+puts( "Enter seven integers: " );
+scanf( "%d%i%i%i%o%u%x", &a, &b, &c, &d, &e, &f, &g );
+The % in this context is treated by scanf
+(and printf as we’ll see) as a special character that begins a conversion specifier. The second
+argument of scanf begins with an ampersand ( & )—called the address operator
+& is address operator which is used for special characters such as %
+
+
+
+(4)
+
+what is the process for vim compiler?
+after opening the terminal,follow steps
+Esc- shift;-wq-shift1(Esc,:wq!)
+then vim file name
+
+
+
+(5)
+
+EXPERIMENT:# NOT WRITTEN
+When # is not written
+E492: Not an editor command: qw!
+The compiler did not compile the code.
+so,maybe the compiler starts compiling after reading #
+pg42
+#include <stdio.h>
+is a directive to the C preprocessor. Lines beginning with # are processed by the prepro-
+cessor before compilation. Line tells the preprocessor to include the contents of the stan-
+dard input/output header ( <stdio.h> ) in the program. This header contains information used by the compiler when compiling calls to standard input/output library functions such
+as printf .
+
+
+
+(6)
+
+What is a preprocessor?
+C has preprocessors...include,define etc are preprocessors
+What is a Preprocessor Directive?
+pg525
+The preprocessor executes before a program is compiled.
+• All preprocessor directives begin with # .
+• Only whitespace characters and comments may appear before a preprocessor directive on a line.
+
+
+
+(7)
+
+WHAT IS A TOKEN?
+pg359
+Function strtok is used to break a string into a series of tokens. A token is a
+sequence of characters separated by delimiters (usually spaces or punctuation marks, but a
+delimiter can be any character). For example, in a line of text, each word can be considered
+a token, and the spaces and punctuation separating the words can be considered delimiters.
+Did not understand completely , but it might be a unit of the program.
+A programming token is the basic component of source code . Characters are categorized as one of five classes of tokens that
+describe their functions (constants, identifiers, operators, reserved words, and separators) in accordance with the rules of the
+programming language.
+A token is the smallest element of a program that is meaningful to the compiler
+
+
+
+(8)
+
+add.c:2:16: error: expected ‘;’, ‘,’ or ‘)’ before ‘*’ token
+int input(int a*,int b*)
+It is (int *a,int *b); the * symbol should be use dbefore the variale and not after the variable.
+syntax error,small confusion.
+
+
+
+(9)
+
+add.c: In function ‘input’:
+add.c:5:8: error: expected expression before ‘%’ token
+scanf(%d,a);
+^
+add.c:7:8: error: expected expression before ‘%’ token
+scanf(%d,b);
+^
+"%d" should be written and not %d alone.
+syntax error,forgot to add the " "
+
+
+
+(10)
+
+What is void?
+int main( void ) is a part of every C program. The parentheses after main indicate that main is a program
+building block called a function. C programs contain one or more functions, one of which
+must be main . Every program in C begins executing at the function main . Functions can
+return information. The keyword int to the left of main indicates that main “returns” an
+integer (whole-number) value.
+Functions also can receive information when they’re called upon to execute. The void in parentheses here
+means that main does not receive any information.
