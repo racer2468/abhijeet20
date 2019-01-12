@@ -1,0 +1,124 @@
+(1)
+
+error-1
+p1.c: In function ‘input’:
+p1.c:5:11: warning: missing terminating " character
+     scanf("%d,a) 
+" is not closed 
+error-2
+a1.c:6:13: warning: format ‘%d’ expects argument of type ‘int *’, but argument 2 has type ‘int’ [-Wformat=]
+     scanf("%d",a);
+
+
+
+(2)
+
+a1.c:7:12: error: expected expression before ‘int’
+     return int a;
+            ^~~
+puts( "Enter seven integers: " );
+scanf( "%d%i%i%i%o%u%x", &a, &b, &c, &d, &e, &f, &g );
+The % in this context is treated by scanf
+(and printf as we’ll see) as a special character that begins a conversion specifier. The second
+argument of scanf begins with an ampersand ( & )—called the address operator
+& is address operator which is used for special characters such as %
+
+
+
+(3)
+
+what is the process for vim compiler?
+after opening the terminal,follow steps
+Esc- shift;-wq-shift1(Esc,:wq!)
+then vim file name
+
+
+
+(4)
+Pass by Value:-
+When arguments are passed by value, a copy of the argument’s value
+is made and passed to the called function. Changes to the copy do not affect an original
+variable’s value in the caller.Pass-by-value should be used whenever the called function does not need to modify
+the value of the caller’s original variable.
+
+
+
+(5)
+
+Pass by Reference:-
+When an argument is passed by reference, the caller allows the
+called function to modify the original variable’s value.
+ERROR: input(&x,&y); is to be written,
+
+
+
+(6)
+
+syntax error
+2.c:27:13: error: ‘z’ redeclared as different kind of symbol
+int z=add(int x,int y);
+^
+2.c:23:26: note: previous definition of ‘z’ was here
+int main(int x,int y,int z)
+^
+2.c:27:19: error: expected expression before ‘int’
+int z=add(int x,int y);
+^
+2.c:27:15: error: too few arguments to function ‘add’
+int z=add(int x,int y);
+^
+2.c:12:5: note: declared here
+the right code is z=add(x,y);and not int x and int y that has to be passed.
+
+
+
+
+(7)
+
+syntax error
+2.c:23:14: note: previous definition of ‘x’ was here
+int main(int x,int y,int z)
+^
+2.c:23:20: note: previous definition of ‘y’ was here
+int main(int x,int y,int z)
+^
+int main() is the correct code.Main does not take input values.Thus, int x,int y,int z should not be declared in the main.
+
+
+
+(8)
+
+Local variable:-
+It might be a variable declared in a block of code or a separate function and used only within that,
+these variables can not be used outside the block.
+Variables declared in a function definition’s body are known as local variables and can be
+used only from the line of their declaration in the function to closing right brace ( } ) of the
+block in which they’re declared. A local variable must be declared before it can be used in
+a function. A local variable cannot be accessed outside the function in which it’s declared.
+When a function terminates, the values of its local variables are lost.
+
+
+
+(9)
+
+What is %d?And how does it work?
+I think it is used to accept the input given by the user,i.e. to extract and obtain the value given by the user.
+The function reads from the standard input, which is usually the keyboard. This scanf has two arguments,
+"%d" and &integer1 . The first, the format control string, indicates the type of data that
+should be entered by the user. The %d conversion specifier indicates that the data should be
+an integer (the letter d stands for “decimal integer”). The % in this context is treated by scanf
+(and printf as we’ll see) as a special character that begins a conversion specifier.
+
+(10)
+
+GLobal variable:-
+it might be a variable definrd in the main function and can be accessed anywhere within the program.
+Global variables are created by placing variable declarations outside any function
+definition, and they retain their values throughout the execution of the program. Global
+variables and functions can be referenced by any function that follows their declarations or definitions in the file.
+The unary scope resolution operator cannot be used to access a local vari-
+able of the same name in an outer block. A global variable can be accessed directly without
+the unary scope resolution operator if the name of the global variable is not the same as
+that of a local variable in scope
+
+
