@@ -1,0 +1,30 @@
+enter a,b,c 4 3 1
+Segmentation fault (core dumped)
+vmware@vmware-OptiPlex-3020:~$ 
+
+
+
+
+#include <stdio.h>
+int  input(int*a,int*b,int*c)
+{
+     printf("enter a,b,c");
+     scanf("%d,%d,%d",a,b,c);
+}
+int min(int a,int b,int c)
+{
+     int d;
+     d=min(a,b,c);
+     return d;
+}
+void output(int a,int b,int c,int d)
+{
+     printf("%d is minimum among %d,%d,%d",d,a,b,c);
+}
+int main()
+{
+     int l,m,n,o;
+     input(&l,&m,&n);
+     o=min(l,m,n);
+     output(l,m,n,o);
+}
