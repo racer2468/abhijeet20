@@ -1,0 +1,10 @@
+#include <stdio.h>
+struct fraction{
+        int x;
+        int y;
+};
+struct fraction input()
+{
+        printf("Enter two numbers:");
+        scanf("%d%d",&x,&y);
+}
