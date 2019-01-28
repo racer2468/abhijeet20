@@ -1,0 +1,91 @@
+1.c:3:2: error: expected specifier-qualifier-list before ‘fraction’
+  fraction-> x;
+  ^~~~~~~~
+1.c: In function ‘input’:
+1.c:9:16: error: ‘x’ undeclared (first use in this function)
+  scanf("%f%f",&x,&y);
+                ^
+1.c:9:16: note: each undeclared identifier is reported only once for each function it appears in
+1.c:9:19: error: ‘y’ undeclared (first use in this function)
+  scanf("%f%f",&x,&y);
+                   ^
+1.c: At top level:
+1.c:11:6: error: conflicting types for ‘input’
+ void input()
+      ^~~~~
+1.c:6:17: note: previous definition of ‘input’ was here
+ struct fraction input()
+                 ^~~~~
+1.c: In function ‘input’:
+1.c:13:2: error: unknown type name ‘fraction’; use ‘struct’ keyword to refer to the type
+  fraction z;
+  ^~~~~~~~
+  struct 
+1.c:14:4: error: ‘x’ undeclared (first use in this function)
+  z=x+y;
+    ^
+1.c:14:6: error: ‘y’ undeclared (first use in this function)
+  z=x+y;
+      ^
+1.c:15:9: warning: ‘return’ with a value, in function returning void
+  return z;
+         ^
+1.c:11:6: note: declared here
+ void input()
+      ^~~~~
+1.c: At top level:
+1.c:17:13: error: unknown type name ‘fraction’
+ void output(fraction z)
+             ^~~~~~~~
+1.c:21:13: error: expected identifier or ‘(’ before ‘)’ token
+ struct main()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#include <stdio.h>
+struct fraction{
+       int a;
+       int b;
+       int c;
+       int d;
+};
+struct add(struct fraction*f,fraction*g)
+       f->numerator a;
+       f->denominator b;
+       g->numerator c;
+       g->denominator d;
+       printf("%d,%d,%d,%d",f->a,f->b,g->c,g->d);
+
+}
+struct add(fraction*h)
+{
+       f->h=f->f+f->g;
+}
+void output(fraction*h)
+{
+        printf("%d is the sum of %d,%d,%d,%d",h,a,b,c,d);
+}
+int main()
+{
+        int u,x,y,z,w;
+        input(&u,&x,&y,&z);
+        w=add(u,x,y,z);
+        output(w);
+}
