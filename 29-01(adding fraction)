@@ -1,0 +1,29 @@
+#include <stdio.h>
+struct fraction{
+       int numerator;
+       int denominator;
+};
+struct input(struct fraction*f,fraction*g)
+       f->numerator= int a;
+       f->denominator=int b;
+       g->numerator=int c;
+       g->denominator=int d;
+       printf("enter two fractions");
+       scanf("numerator=%d&%d,denominator=%d&%d",f->numerator,g->numerator,f->denominator,g->denominator);
+
+}
+struct add(fraction*h)
+{
+       h=f+g;
+}
+void output(fraction*h)
+{
+        printf("%d is the sum ",h);
+}
+int main()
+{
+        int x,y,z;
+        input(&x,&y);
+        z=add(x,y);
+        output(z);
+}
