@@ -45,6 +45,43 @@
 
 
 
+#include <stdio.h>
+struct fraction{
+       int numerator;
+       int denominator;
+};
+struct input_fraction(fraction f,fraction g)
+{
+       printf("enter numertor1:");
+       scanf("%d",f->numerator);
+       printf("enter denominator1:");
+       scanf("%d",f->denominator);
+       printf("enter numerator2");
+       scanf("%d",g->numertor);
+       printf("enter denominator2:");
+       scanf("%d",g->denominator);
+}
+struct add_fraction(struct fraction*h)
+{
+       h=f+g;
+       return h;
+}
+void output(struct fraction h)
+{
+        printf("%d/%d is the sum ",h.numerator,h.denominator);
+}
+struct main()
+{
+        struct f,g,h;
+        input(f,g);
+        h=add(f,g);
+        output(f,g,h);
+}
+
+
+
+
+
 
 
 
