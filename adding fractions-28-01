@@ -126,3 +126,54 @@ int main()
         w=add(u,x,y,z);
         output(w);
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#incilude <stdio.h>
+struct farction
+{
+        int numerator;
+        int denominator;
+};
+void input_farction(struct fraction *f,struct fraction *g)
+{
+        printf("enter numerator 1:");
+        scanf("%d",&f->numerator);
+        printf("enter denominator 1:");
+        scanf("%d",&f->denominator);
+        printf("enter numerator 2:");
+        scanf("%d",&g->numerator);
+        printf("enter denominator 2:");
+        scanf("%d",&g->denominator);
+}
+int sum(struct fraction f,struct fraction g)
+{
+        int h,g,a;
+        int h=(f.numerator*g.denominator)+(g.numerator*f.denominator);
+        int g=(f.denominator*g.denominator);
+        int a=h/g;
+        return a;
+}
+void output(int a)
+{
+        printf("%d is the sum",a);
+}
+int main()
+{
+        int a,f,g;
+        input();
+        a=sum(&f,&g);
+        output(a);
+}
