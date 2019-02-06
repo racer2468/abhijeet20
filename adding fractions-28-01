@@ -177,3 +177,32 @@ int main()
         a=sum(&f,&g);
         output(a);
 }
+
+
+
+
+
+
+
+
+
+
+
+#include <stdio.h>
+struct farction
+{
+        int numerator;
+        int denominator;
+};
+int input_farction(struct fraction *f,struct fraction *g)
+{
+        printf("enter numerator 1:");
+        scanf("%d",f->numerator);
+        printf("enter denominator 1:");
+        scanf("%d",f->denominator);
+        printf("enter numerator 2:");
+        scanf("%d",g->numerator);
+        printf("enter denominator 2:");
+        scanf("%d",g->denominator);
+}
+
