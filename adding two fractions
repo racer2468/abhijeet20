@@ -53,43 +53,4 @@ int  main()
         input_fraction(&a,&b);
         c=add_fraction(a,b);
         output(c);
-}
-
-             
-                                                                                                                            1,1   
-
-#include <stdio.h>
-struct fraction
-{
-        int numerator;
-        int denominator;
-};
-void input_fraction(struct fraction *f,struct fraction *g)
-{
-        printf("enter numerator1:");
-        scanf("%d",&f->numerator);
-        printf("enter denominator1:");
-        scanf("%d",&f->denominator);
-        printf("enter numerator2:");
-        scanf("%d",&g->numerator);
-        printf("enter denominator2:");
-        scanf("%d",&g->denominator);
-}
-struct fraction add_fraction(struct fraction f,struct fraction g)
-{
-        struct fraction h;
-        h.numerator=(f.numerator*g.denominator)+(g.numerator*f.denominator);
-        h.denominator=(f.numerator*g.denominator);
-        return h;
-};
-void output(struct fraction h)
-{
-        printf("%d/%d is the sum\n ",h.numerator,h.denominator);
-}
-int main()
-{
-        struct fraction x,y,z;
-        input_fraction(&x,&y);
-        z=add_fraction(x,y);
-        output(z);
-}
+}                                                                                                       1,1   
