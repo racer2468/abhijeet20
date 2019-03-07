@@ -21,7 +21,6 @@ struct fraction add_fraction(struct fraction f,struct fraction g)
         h.numerator=(f.numerator*g.denominator)+(g.numerator*f.denominator);
         h.denominator=(f.denominator*g.denominator);
         if(h.numerator%h.denominator==0)
-         if(h.numerator%h.denominator==0)
         {
                 if(h.numerator>h.denominator)
                 {
