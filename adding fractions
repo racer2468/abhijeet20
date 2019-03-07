@@ -1,10 +1,44 @@
 #include <stdio.h>
-struct fraction{
-        int x;
-        int y;
-};
-struct fraction input()
+struct fraction
 {
-        printf("Enter two numbers:");
-        scanf("%d%d",&x,&y);
-}
+        int numerator;
+        int denominator;
+};
+void  input_fraction(struct fraction *f,struct fraction *g)
+{
+        printf("enter numerator 1:");
+        scanf("%d",&f->numerator);
+        printf("enter denominator 1:");
+        scanf("%d",&f->denominator);
+        printf("enter numerator 2:");
+        scanf("%d",&g->numerator);
+        printf("enter denominator 2:");
+        scanf("%d",&g->denominator);
+};
+struct fraction add_fraction(struct fraction f,struct fraction g)
+{
+        struct fraction h,s;
+        h.numerator=(f.numerator*g.denominator)+(g.numerator*f.denominator);
+        h.denominator=(f.denominator*g.denominator);
+        if(h.numerator%h.denominator==0)
+         if(h.numerator%h.denominator==0)
+        {
+                if(h.numerator>h.denominator)
+                {
+                        s.numerator=h.numerator/h.denominator;
+                        s.denominator=h.denominator/h.denominator;
+                }
+                else if(h.numerator/h.denominator==1)
+                {
+                        s.numerator=1;
+                        s.denominator=1;
+                }
+                else
+                {
+                        s.numerator=h.numerator;
+                        s.denominator=h.denominator;
+                }
+        }
+        return s;
+};
+                                                      1,8           Top
