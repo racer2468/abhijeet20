@@ -4,19 +4,22 @@ int input()
         int n;
         printf(" how many numbers u want add:");
         scanf("%d",&n);
+        printf("enter the numbers to be added:");
         int i,add[n];
         for(i=0;i<n;i++)
         {
                 scanf("%d",&add[i]);
         }
+        return n;
 }
-int compute(int n)
+int compute(int n,int add[n])
 {
-        int i,add[n],s=0;
+        int i,s=0;
         for(i=0;i<n;i++)
         {
                 s=s+add[i];
         }
+        return n;
 }
 void output(int s)
 {
@@ -25,7 +28,9 @@ void output(int s)
 int main()
 {
         int n,s;
-        n=input();
-        s=compute(n);
+        int add[n];
+        input(&n,&add[n]);
+        compute(n,add[n]);
         output(s);
+
 }
